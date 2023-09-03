@@ -1,0 +1,175 @@
+/*font Variables*/
+/*Color Variables*/
+/* font-family: 'Source Sans Pro', sans-serif; */
+/* font-family: 'Arimo', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
+
+/* Topbar Style */
+.topbar {
+  background: #15357A;
+  color: var(--White, #FFF);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.topbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar .follow-social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.topbar .follow-social ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.follow-social ul li:first-child {
+  color: var(--White, #FFF);
+
+  /* Body 1 */
+  font-family: Arimo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  /* 32.4px */
+  margin-right: 10px;
+}
+
+.topbar .mail a {
+  text-decoration: none;
+  color: var(--White, #FFF);
+  margin-left: 10px;
+
+
+  /* Body 1 */
+  font-family: Arimo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  /* 32.4px */
+}
+
+.header-wrap {
+  background: var(--dark-color, #262940);
+}
+
+.header-area .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  border-bottom: 1px solid #4C5072;
+}
+
+@media (min-width: 1024px) {
+  .header-area .container {
+
+    padding: 30px 0;
+
+  }
+}
+
+.nav-menu-item {
+  display: none;
+}
+
+.nav-btn-wrapper .nav-btn {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav-menu-item {
+    display: flex;
+  }
+
+  .nav-btn-wrapper .nav-btn {
+    display: flex;
+  }
+}
+
+.header-area .nav-menu-item ul {
+
+  display: flex;
+  gap: 40px;
+}
+
+.header-area .nav-menu-item ul li a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: Arimo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%;
+  /* 32.4px */
+
+}
+
+.header-area .nav-menu-item ul li a span {
+  margin-left: 16px;
+}
+
+.nav-btn {
+  display: inline-flex;
+  padding: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 120px;
+  background: var(--2ed-color, #00AC6B);
+  border: none;
+  outline: none;
+  color: var(--White, #FFF);
+
+  /* Button */
+  font-family: Arimo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  /* 16px */
+  text-transform: capitalize;
+}
+
+@media (min-width: 1024px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
