@@ -24,6 +24,7 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+
 p {
   margin-bottom: 0 !important;
 }
@@ -54,11 +55,13 @@ p {
   align-items: center;
   gap: 4px;
 }
+
 @media (min-width: 768px) {
   .topbar .follow-social ul {
     gap: 10px;
   }
 }
+
 .follow-social ul li:first-child {
   color: var(--White, #fff);
 
@@ -69,18 +72,22 @@ p {
 
   margin-right: 6px;
 }
+
 @media (min-width: 768px) {
   .follow-social ul li:first-child {
     font-size: 18px;
     margin-right: 10px;
   }
 }
+
 .follow-social ul li a svg,
 .mail svg {
   width: 14px;
   height: 14px;
 }
+
 @media (min-width: 768px) {
+
   .follow-social ul li a svg,
   .mail svg {
     width: 20px;
@@ -100,6 +107,7 @@ p {
 
   /* 32.4px */
 }
+
 @media (min-width: 768px) {
   .topbar .mail a {
     font-size: 18px;
@@ -197,19 +205,23 @@ p {
   background: var(--dark-color, #262940);
   max-width: 350px;
 }
+
 .offcanvas .offcanvas-body .mobile-nav-menu-item ul li a {
   color: #fff;
 
   text-decoration: none;
 }
+
 .offcanvas .offcanvas-body .mobile-nav-menu-item ul li a svg {
   width: 14px;
   height: 14px;
 }
+
 .offcanvas .mobile-nav-menu-item li {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
 .offcanvas .mobile-nav-btn {
   display: inline-flex;
   padding: 20px 30px;
@@ -235,7 +247,9 @@ p {
 /* Banner area */
 .banner-area .container {
   padding: 0 24px;
+  padding-bottom: 50px;
 }
+
 @media (min-width: 1024px) {
   .banner-area .container {
     padding: 0;
@@ -263,11 +277,13 @@ p {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px; /* 138.889% */
+  line-height: 50px;
+  /* 138.889% */
   text-transform: capitalize;
   margin-top: 46px;
   margin-bottom: 20px;
 }
+
 .banner-content ul li {
   color: var(--White, #fff);
   text-align: center;
@@ -275,9 +291,11 @@ p {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 25.6px */
+  line-height: 160%;
+  /* 25.6px */
   margin-bottom: 10px;
 }
+
 @media (min-width: 1024px) {
   .banner-title {
     text-align: left;
@@ -290,6 +308,7 @@ p {
     margin-left: 15px;
   }
 }
+
 @media (min-width: 1200px) {
   .banner-title {
     font-size: 50px;
@@ -324,7 +343,8 @@ p {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%; /* 16px */
+  line-height: 100%;
+  /* 16px */
   text-transform: capitalize;
   display: flex;
   align-items: center;
@@ -345,10 +365,12 @@ p {
     width: 100%;
     position: relative;
   }
+
   .hire-btn a {
     width: 88px;
     height: 40px;
   }
+
   .hire-btn span {
     position: absolute;
     right: 10px;
@@ -369,6 +391,7 @@ p {
   gap: 10px;
   margin-bottom: 40px;
 }
+
 @media (min-width: 1200px) {
   .connect-people {
     gap: 27px;
@@ -380,6 +403,7 @@ p {
   height: 24px;
   margin-left: -14px;
 }
+
 @media (min-width: 768px) {
   .connect-people-img-group img {
     width: 44px;
@@ -391,17 +415,216 @@ p {
 .connect-people-img-group img:first-child {
   margin-left: 0px;
 }
+
 .connect-people p {
   color: var(--White, #fff);
   font-family: Arimo;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%; /* 12px */
+  line-height: 100%;
+  /* 12px */
   text-transform: capitalize;
 }
+
 @media (min-width: 768px) {
   .connect-people p {
+    font-size: 16px;
+  }
+}
+
+
+/* About area */
+.about-area .container {
+  padding: 0 24px;
+}
+
+
+
+@media (min-width: 1024px) {
+  .about-area .container {
+    padding: 130px 0;
+  }
+
+  .about-content {
+    grid-area: content;
+  }
+
+  .about-img {
+    grid-area: img;
+  }
+
+  .about-card {
+    grid-area: card;
+  }
+
+  .about-area .container {
+    display: grid;
+    grid-template-areas: "img content"
+      "img card";
+    gap: 20px;
+
+  }
+
+
+
+
+}
+
+@media (min-width: 1200px) {
+  .about-area .container {
+
+    gap: 110px;
+    padding-left: 52px;
+  }
+}
+
+.about-title {
+  color: var(--2ed-color, #00AC6B);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 1024px) {
+  .about-title {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: left;
+  }
+
+}
+
+.about-sub-title {
+  color: var(--dark-color, #262940);
+  text-align: center;
+  font-family: Arimo;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -0.28px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+  .about-sub-title {
+    margin-top: 20px;
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .about-sub-title {
+    margin-top: 30px;
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 0;
+    line-height: 58px;
+    /* 120.833% */
+    letter-spacing: -0.48px;
+
+  }
+
+}
+
+.about-card-group {
+  margin-top: 30px;
+}
+
+.about-card {
+  padding: 10px;
+  border-radius: 8.484px;
+  background: #FFF;
+  box-shadow: -5.30233px 5.30233px 26.51163px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: start;
+  gap: 11.35px;
+  margin-bottom: 14px;
+
+}
+
+
+
+.about-card img {
+  width: 34px;
+  height: 32px;
+}
+
+.about-card h2 {
+  color: var(--dark-color, #262940);
+  font-family: Arimo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  /* 128.571% */
+}
+
+.about-card p {
+  color: var(--Body-text, #3E4159);
+  font-family: Arimo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 19.2px */
+}
+
+@media (min-width: 1024px) {
+  .about-card-group {
+    margin-top: 0px;
+  }
+
+  .about-card {
+    padding: 20px 57px 20px 20px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: -10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  }
+
+  .about-card img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .about-card h2 {
+    font-size: 20px;
+  }
+
+  .about-card p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+
+  .about-card-group {
+    margin-top: -80px;
+  }
+
+
+
+  .about-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-card h2 {
+    font-size: 24px;
+  }
+
+  .about-card p {
     font-size: 16px;
   }
 }
